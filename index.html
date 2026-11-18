@@ -24,7 +24,7 @@
      changes everywhere on the page.
      ============================================================ */
   :root{
-    --bg:#F2A6C1;        /* page background (journal pink) */
+    --bg:#FBDCE7;        /* page background (journal pink) */
     --red:#C4122F;       /* main colour: text, buttons */
     --card:#FFF7FA;      /* button background */
     --soft:#FBDCE7;      /* light pink details */
@@ -41,7 +41,7 @@
   }
   /* soft paper texture, like the journal cover */
   body::before{
-    content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;
+    content:"";position:fixed;inset:0;pointer-events:none;opacity:.0;mix-blend-mode:multiply;
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.02' numOctaves='4' seed='11'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .2  0 0 0 0 .32  0 0 0 1.1 -0.45'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
   }
   .wrap{position:relative;max-width:460px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
@@ -118,7 +118,7 @@
       <span class="tag">Free</span>
     </a>
 
-    <!-- BUTTON: the journal on Amazon, with a choice of country.
+    <!-- BUTTON: the journal on Amazon.
          Change or delete the country links inside <div class="stores">. -->
     <details class="btn">
       <summary>
